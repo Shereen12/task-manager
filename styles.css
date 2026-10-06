@@ -1,0 +1,142 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #010481;
+}
+
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#create-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#edit-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10%;
+    
+}
+
+form input,textarea,select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form p{
+    color:red !important;
+    width: 100%;
+    min-width: 200px;
+}
+
+button{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: #010481;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+#header a{
+    color: #fff;
+}
+
+#dashboard h1,p,span,a{
+    color:#fff;
+}
+
+.stats {
+    padding: 1%;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 5%;
+    color:#010481;
+    padding: 4%;
+}
+
+.tasks{
+    padding: 5%; 
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.task li,a,span {
+    color:#010481;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 6%;
+    }
+
+    .controls {
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        width: 100%;
+    }
+
+    .tasks {
+        padding: 5%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
+}
